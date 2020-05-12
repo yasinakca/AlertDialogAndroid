@@ -18,19 +18,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void saveClicked(View view) {
         AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
-        alert.setTitle("Alert Title");
+        alert.setTitle("Alert");
         alert.setMessage("Alert message");
         alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this,"Positive toast message",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"Yes Toast message",Toast.LENGTH_LONG).show();
             }
         });
 
         alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this,"Negative toast message",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"No Toast Message",Toast.LENGTH_LONG).show();
             }
         });
 
